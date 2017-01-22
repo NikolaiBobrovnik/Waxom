@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 //slider
     $('.carousel').carousel({
-        interval: 5000
+        interval: false
     })
 
     //slick slider
@@ -95,6 +95,7 @@ $(document).ready(function () {
     $("#carouselExampleIndicators").swipeleft(function () {
         $(this).carousel('next');
     });
+
     //end swipe
 
 

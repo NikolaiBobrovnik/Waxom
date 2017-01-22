@@ -1,22 +1,57 @@
 /*==========  Desktop First Method  ==========*/
 
 // Extra large devices (large desktops, 1200px and up)
-@media (max-width: 1199px) {
+@media (max-width: 1199px) and (orientation: portrait){
+  .header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
 }
 
+@media (max-width: 1199px) and (orientation: landscape){
+  .header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+
 // Large devices (desktops, 992px and up)
-@media (max-width: 991px) {
+@media (max-width: 991px) and (orientation: portrait) {
+  .header {
+    .header-right {
+      nav {
+        display: none;
+      }
+    }
+  }
   .slider {
     height: calc(100vh - 30vh);
   }
   .carousel-inner {
     height: calc(100vh - 30vh);
+  }
+}
+
+@media (max-width: 991px) and (orientation: landscape) {
+  .header {
+    .header-right {
+      nav {
+        display: none;
+      }
+    }
+  }
+  .slider {
+    height: calc(100vh - 0vh);
+  }
+  .carousel-inner {
+    height: calc(100vh - 0vh);
   }
 }
 
 // Medium devices (tablets, 768px and up)
-@media (max-width: 767px) {
+@media (max-width: 767px) and (orientation: portrait) {
   .slider {
     height: calc(100vh - 50vh);
   }
@@ -25,14 +60,30 @@
   }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (max-width: 575px) {
+@media (max-width: 767px) and (orientation: landscape) {
   .slider {
     height: calc(100vh - 0vh);
   }
   .carousel-inner {
     height: calc(100vh - 0vh);
   }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) and (orientation: portrait) {
+  .header {
+    width: 100%;
+  }
+  .slider {
+    height: calc(100vh - 0vh);
+  }
+  .carousel-inner {
+    height: calc(100vh - 0vh);
+  }
+}
+
+@media (max-width: 575px) and (orientation: landscape) {
+
 }
 
 // Extra large devices (large desktops)
