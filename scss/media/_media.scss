@@ -1,0 +1,61 @@
+/*==========  Desktop First Method  ==========*/
+
+// Extra large devices (large desktops, 1200px and up)
+@media (max-width: 1199px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 991px) {
+  .slider {
+    height: calc(100vh - 30vh);
+  }
+  .carousel-inner {
+    height: calc(100vh - 30vh);
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (max-width: 767px) {
+  .slider {
+    height: calc(100vh - 50vh);
+  }
+  .carousel-inner {
+    height: calc(100vh - 50vh);
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 575px) {
+  .slider {
+    height: calc(100vh - 0vh);
+  }
+  .carousel-inner {
+    height: calc(100vh - 0vh);
+  }
+}
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+
+/*==========  Mobile First Method  ==========*/
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}

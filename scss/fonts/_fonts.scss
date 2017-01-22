@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "Proxima Nova Black";
+  src: url("/fonts/Proxima Nova/Proxima Nova Black.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Regular";
+  src: url("/fonts/Proxima Nova/Proxima Nova Regular.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url("/fonts/Proxima Nova/Proxima Nova Bold.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url("/fonts/Proxima Nova/Proxima Nova Semibold.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@mixin proximanova($style : Black) {
+
+  @if $style == Black {
+    font-family: "Proxima Nova Black";
+  }
+
+  @if $style == Regular {
+    font-family: "Proxima Nova Regular";
+  }
+
+  @if $style == Bold {
+    font-family: "Proxima Nova Bold";
+  }
+
+  @if $style == Semibold {
+    font-family: "Proxima Nova Semibold";
+  }
+
+}

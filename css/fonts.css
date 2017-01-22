@@ -1,0 +1,47 @@
+@font-face {
+	font-family: "Proxima Nova Black";
+	src: url("../fonts/Proxima Nova/Proxima Nova Black.otf");
+	src: url("../fonts/Proxima Nova/Proxima Nova Black.otf")format("embedded-opentype"),
+	url("../fonts/Proxima Nova/Proxima Nova Black.otf") format("woff"),
+	url("../fonts/Proxima Nova/Proxima Nova Black.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Proxima Nova Regular";
+	src: url("../fonts/Proxima Nova/Proxima Nova Regular.otf");
+	src: url("../fonts/Proxima Nova/Proxima Nova Regular.otf")format("embedded-opentype"),
+	url("../fonts/Proxima Nova/Proxima Nova Regular.otf") format("woff"),
+	url("../fonts/Proxima Nova/Proxima Nova Regular.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Proxima Nova Bold";
+	src: url("../fonts/Proxima Nova/Proxima Nova Bold.otf");
+	src: url("../fonts/Proxima Nova/Proxima Nova Bold.otf")format("embedded-opentype"),
+	url("../fonts/Proxima Nova/Proxima Nova Bold.otf") format("woff"),
+	url("../fonts/Proxima Nova/Proxima Nova Bold.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "Proxima Nova Semibold";
+	src: url("../fonts/Proxima Nova/Proxima Nova Semibold.otf");
+	src: url("../fonts/Proxima Nova/Proxima Nova Semibold.otf")format("embedded-opentype"),
+	url("../fonts/Proxima Nova/Proxima Nova Semibold.otf") format("woff"),
+	url("../fonts/Proxima Nova/Proxima Nova Semibold.otf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'Myriad Pro';
+	src: url('../fonts/MyriadProRegular/MyriadProRegular.eot');
+	src: url('../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MyriadProRegular/MyriadProRegular.woff') format('woff'),
+	url('../fonts/MyriadProRegular/MyriadProRegular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

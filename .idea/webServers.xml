@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="0502d85c-27f3-49c7-9536-fb411c74388a" name="Waxom" url="http://t29684gc.bget.ru">
+        <fileTransfer host="t29684gc.bget.ru" port="21" rootFolder="/test/public_html">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
