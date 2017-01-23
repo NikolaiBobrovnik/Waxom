@@ -2,63 +2,23 @@ $(document).ready(function () {
 
 //slider
     $('.carousel').carousel({
-        interval: false
+        //interval: false
     })
 
-    //slick slider
-    $('.responsive').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        responsive: [
-            {
-                breakpoint: 1670,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    arrows: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 1180,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    arrows: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    arrows: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 620,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    arrows: false,
-                    dots: false
-                }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-        ]
-    });
-    //end slick slider
+//header-scroll
+    $(window).scroll(function(){
+        if ( $(this).scrollTop() > 0 ) {
+            $('.header').addClass('header-scroll');
+            $('.header-left').css('margin-top', '10px');
+            $('.header-right').css('margin-top', '10px');
+        } else {
+            $('.header').removeClass('header-scroll');
+            $('.header-left').css('margin-top', '');
+            $('.header-right').css('margin-top', '');
+        }
+    })
+
+
 
     //preloader
     $(window).on('load', function () {
