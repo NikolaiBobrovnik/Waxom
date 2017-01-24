@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 //slider
     $('.carousel').carousel({
-        //interval: false
+        interval: false
     })
 
 //header-scroll
@@ -49,13 +49,24 @@ $(document).ready(function () {
 
 
     //swipe
-    $("#carouselExampleIndicators").swiperight(function () {
-        $(this).carousel('prev');
+    // $("#carouselExampleIndicators").swiperight(function () {
+    //     $(this).carousel('prev');
+    // });
+    // $("#carouselExampleIndicators").swipeleft(function () {
+    //     $(this).carousel('next');
+    // });
+    //Enable swiping...
+    $("#carouselExampleIndicators").swipe( {
+        //Generic swipe handler for all directions
+        swipeLeft:function(event, direction, distance, duration, fingerCount) {
+            $(this).parent().carousel('prev');
+        },
+        swipeRight: function() {
+            $(this).parent().carousel('next');
+        },
+        //Default is 75px, set to 0 for demo so any distance triggers swipe
+        threshold:0
     });
-    $("#carouselExampleIndicators").swipeleft(function () {
-        $(this).carousel('next');
-    });
-
     //end swipe
 
 

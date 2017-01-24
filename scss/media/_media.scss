@@ -74,6 +74,10 @@
   .carousel-inner {
     height: calc(100vh - 50vh);
   }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
   .text-boxes {
     .text-boxes-left {
       float: none;
@@ -101,6 +105,10 @@
   .carousel-inner {
     height: calc(100vh - 0vh);
   }
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
   .text-boxes {
     .text-boxes-left {
       float: none;
@@ -123,6 +131,9 @@
 
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 575px) and (orientation: portrait) {
+  .header {
+    width: 100%;
+  }
   .slider {
     height: calc(100vh - 0vh);
   }
@@ -132,7 +143,15 @@
 }
 
 @media (max-width: 575px) and (orientation: landscape) {
-
+  .header {
+    width: 100%;
+  }
+  .slider {
+    height: calc(100vh - 0vh);
+  }
+  .carousel-inner {
+    height: calc(100vh - 0vh);
+  }
 }
 
 // Extra large devices (large desktops)
